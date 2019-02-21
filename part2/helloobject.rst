@@ -75,7 +75,7 @@ Step 2: Implement your SimObject in C++
 Next, we need to create ``hello_object.hh`` and ``hello_object.cc`` which will implement the hello object.
 
 We'll start with the header file for our ``C++`` object.
-By convention, gem5 wraps all header files in ``#ifndef/#endif`` with the name of the file and the directory its in so there are no circular includes.
+By convention, gem5 uses header guards (``#ifndef/#endif`` guards) styled as `__PATH_TO_FILE_NAME_HH__` to prevent double inclusions.
 
 The only thing we need to do in the file is to declare our class.
 Since ``HelloObject`` is a SimObject, it must inherit from the C++ SimObject class.

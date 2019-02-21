@@ -21,14 +21,16 @@ Details on gem5 style can be found on the gem5 `wiki page`_.
 To help you conform to the style guidelines, gem5 includes a script which runs whenever you commit a changeset in git.
 This script should be automatically added to your .git/config file by SCons the first time you build gem5.
 Please do not ignore these warnings/errors.
-However, in the rare case where you are trying to commit a file that doesn't conform to the gem5 style guidelines (e.g., something from outside the gem5 source tree) you can use the git option ``--no-verify`` to skip running the style checker.
+In the rare case where you are trying to commit a file that doesn't conform to the gem5 style guidelines (e.g., something from outside the gem5 source tree) you can use the git option ``--no-verify`` to skip running the style checker.
 
 The key takeaways from the style guide are:
 
-- Use 4 spaces, not tabs
-- Sort the includes
-- Use capitalized camel case for class names, camel case for member variables, and underscores for local variables.
 - Document your code
+- Use 4 spaces, not tabs
+- Avoid lines longer than 80 characters
+- Use `PascalCase` for class names, `camelCase` for member variables, and `snake_case` for local variables.
+- Sort the includes
+
 
 git branches
 ~~~~~~~~~~~~
